@@ -7,7 +7,7 @@ from scipy.optimize import minimize
 from scipy.linalg import lstsq
 import os
 
-paths = os.listdir('pclouds') 
+paths = os.listdir('pclouds')  
 print(paths)
 
 '''visualization'''
