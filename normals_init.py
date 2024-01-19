@@ -10,7 +10,8 @@ import os
 def find_neighs(points, k=250):
     nbrs = NearestNeighbors(n_neighbors=k, algorithm= 'kd_tree').fit(points)
     distances, indices = nbrs.kneighbors(points) 
-    return distances, indices
+    # print(points[indices])
+    return distances[:,1:], indices[:,1:]
 
 def pca_plane(points):
     # print(points.shape)
